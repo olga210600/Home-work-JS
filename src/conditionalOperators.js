@@ -10,12 +10,17 @@ const getNumber = (a, b) => {
     }
     console.log(num)
 }
+
+//тернарный
+
+const getNumberTernar = (a, b) => a % 2 === 0 ? a * b : a + b;
+
 getNumber(5, 10)
+console.log(getNumberTernar(5, 10))
 
 // 2 Определить какой четверти принадлежит точка с координатами (х,у)
 
-const coordinate = (x, y) => {
-
+const getCoordinate = (x, y) => {
     if (x > 0 && y > 0) {
         console.log('1 четверть');
     } else if (x < 0 && y > 0) {
@@ -29,7 +34,7 @@ const coordinate = (x, y) => {
     }
 }
 
-coordinate(5, 7);
+getCoordinate(5, 7);
 
 
 // 3 Найти суммы только положительных из трех чисел
@@ -41,9 +46,11 @@ const positiveNum = (a, b, c) => {
     if (a > 0) {
         sum += a;
     }
+
     if (b > 0) {
         sum += b;
     }
+
     if (c > 0) {
         sum += c;
     }
@@ -64,6 +71,7 @@ const maxExpression = (a, b, c) => {
     } else {
         sum = (a + b + c) + 3;
     }
+
     console.log(sum);
 }
 
